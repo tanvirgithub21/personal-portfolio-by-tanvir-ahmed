@@ -1,0 +1,512 @@
+/* google font poppins link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* common style */
+:root{
+    --black-color: #08090f;
+    --lite-black: #333333;
+    --highlight-color: #2196f3;
+    --white: #ffffff;
+    --open-sane: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: var(--black-color);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* nav bar style start  */
+header{
+    padding: 6px 0;
+    box-shadow: 0px 0px 24px -4px #ffffff44;
+    background: linear-gradient(to right, #1e202c, var(--black-color));
+}
+.nav_wrap ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+.nav_wrap ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.nav_wrap ul a{
+    text-decoration: none;
+    color: #dadada;
+    font-size: 18px;
+    font-weight:400;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--lite-black);
+    box-sizing: content-box;
+    transition: .3s ease-in-out;
+}
+.nav_wrap ul a:hover{
+    color: var(--highlight-color);
+}
+
+/* home section style  */
+.home{
+    height: calc(100vh - 69.86px);
+    background: linear-gradient(to right, #393d53, var(--black-color));
+}
+.home_wrap{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 69.86px);
+
+}
+.home_img{
+    flex: 11;
+    height: calc(100vh - 69.86px);
+    background-image: url(../image/tanvir-ahmed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-405px);
+    transform: rotate(2deg);
+}
+
+.home_info{
+    flex: 13;
+    color: white;
+}
+.hi_there{
+    font-family: var(--open-sane);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+.animation_text{
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: var(--poppins);
+    line-height: 42px;
+    margin: 19px 0 0 0;
+}
+.animation_text span{
+    color: var(--highlight-color);    
+}
+.home_info_text p{
+    font-size: 18px;
+    margin: 11px 0 23xp 0;
+    font-weight: 400;
+    line-height: 34px;
+    font-family: var(--open-sane);
+}
+
+
+/* button style  */
+.home_info_button{
+    margin-top: 53px;
+}
+.button{
+    margin-right: 15px;
+}
+.button a{
+    font-size: 18px;
+    color: white;
+    background-color: var(--highlight-color);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid var(--highlight-color);
+    
+}
+.about_btn a:hover{
+    background-color: var(--lite-black);
+    border: 2px solid var(--lite-black);
+    transition: 0.3s ease-in-out;
+}
+.protfolio_btn a{
+    background-color: transparent;
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+}
+.protfolio_btn a:hover{
+    background-color: var(--highlight-color);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+.animation_text > span{
+    color: transparent;
+    position: relative;
+}
+
+.animation_text > span::before{
+    content: "";
+    color: var(--highlight-color);
+    position: absolute;
+    top: 9px;left: 0px;
+    animation: typing 15s step-end infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        content: 'T';
+    }
+
+    1% {
+        content: 'ta';
+    }
+
+    2% {
+        content: 'tan';
+    }
+
+    3% {
+        content: 'tanv';
+    }
+
+    4% {
+        content: 'tanvi';
+    }
+
+    5% {
+        content: 'tanvir';
+    }
+
+    6% {
+        content: 'tanvir ';
+    }
+
+    7% {
+        content: 'tanvir a';
+    }
+
+    8% {
+        content: 'tanvir ah';
+    }
+
+    9% {
+        content: 'tanvir ahm';
+    }
+
+    10% {
+        content: 'tanvir ahme';
+    }
+
+    11% {
+        content: 'tanvir ahmed';
+    }
+
+    12% {
+        content: 'tanvir ahmed';
+    }
+
+    12.5% {
+        content: 'tanvir ahme';
+    }
+
+    13% {
+        content: 'tanvir ahm';
+    }
+
+    13.5% {
+        content: 'tanvir ah';
+    }
+
+    14% {
+        content: 'tanvir a';
+    }
+
+    14.5% {
+        content: 'tanvir ';
+    }
+
+    15% {
+        content: 'tanvir';
+    }
+
+    15.5% {
+        content: 'tanvi';
+    }
+
+    16% {
+        content: 'tanv';
+    }
+
+    16.5% {
+        content: 'tan';
+    }
+
+    17% {
+        content: 'ta';
+    }
+
+    17.5% {
+        content: 't';
+    }
+
+    18% {
+        content: '';
+    }
+
+    20% {
+        content: '';
+    }
+
+    21% {
+        content: 'a';
+    }
+
+    22% {
+        content: 'a ';
+    }
+
+    23% {
+        content: 'a w';
+    }
+
+    24% {
+        content: 'a we';
+    }
+
+    25% {
+        content: 'a web';
+    }
+
+    26% {
+        content: 'a web ';
+    }
+    27% {
+        content: 'a web d';
+    }
+    28% {
+        content: 'a web de';
+    }
+    29% {
+        content: 'a web des';
+    }
+    30% {
+        content: 'a web desi';
+    }
+    31% {
+        content: 'a web desig';
+    }
+    32% {
+        content: 'a web design';
+    }
+    33% {
+        content: 'a web designi';
+    }
+    34% {
+        content: 'a web designir';
+    }
+    35% {
+        content: 'a web designir';
+    }
+    35.5% {
+        content: 'a web designi';
+    }
+    36% {
+        content: 'a web design';
+    }
+    36.5% {
+        content: 'a web desig';
+    }
+    37% {
+        content: 'a web desi';
+    }
+    37.5% {
+        content: 'a web des';
+    }
+    38% {
+        content: 'a web de';
+    }
+    38.5% {
+        content: 'a web d';
+    }
+    39% {
+        content: 'a web ';
+    }
+    39.5% {
+        content: 'a web';
+    }
+    40% {
+        content: 'a we';
+    }
+    40.5% {
+        content: 'a w';
+    }
+    41% {
+        content: 'a ';
+    }
+    41.5% {
+        content: 'a';
+    }
+    42% {
+        content: '';
+    }
+    43% {
+        content: '';
+    }
+    44% {
+        content: 'a';
+    }
+    45% {
+        content: 'a ';
+    }
+    46% {
+        content: 'a b';
+    }
+    47% {
+        content: 'a bl';
+    }
+    48% {
+        content: 'a blo';
+    }
+    49% {
+        content: 'a blog';
+    }
+    50% {
+        content: 'a blogg';
+    }
+    51% {
+        content: 'a blogge';
+    }
+    52% {
+        content: 'a blogger';
+    }
+    52% {
+        content: 'a blogger';
+    }
+    52.5% {
+        content: 'a blogge';
+    }
+    53% {
+        content: 'a blogg';
+    }
+    53.5% {
+        content: 'a blog';
+    }
+    54% {
+        content: 'a blo';
+    }
+    54.5% {
+        content: 'a bl';
+    }
+    55% {
+        content: 'a b';
+    }
+    55.5% {
+        content: 'a ';
+    }
+    56% {
+        content: 'a';
+    }
+    56.5% {
+        content: '';
+    }
+    58% {
+        content: 'a';
+    }
+    59% {
+        content: 'a ';
+    }
+    60% {
+        content: 'a f';
+    }
+    61% {
+        content: 'a fr';
+    }
+    62% {
+        content: 'a fre';
+    }
+    63% {
+        content: 'a free';
+    }
+    64% {
+        content: 'a freel';
+    }
+    65% {
+        content: 'a freela';
+    }
+    66% {
+        content: 'a freelan';
+    }
+    67% {
+        content: 'a freelanc';
+    }
+    68% {
+        content: 'a freelance';
+    }
+    69% {
+        content: 'a freelancer';
+    }
+    72% {
+        content: 'a freelancr';
+    }
+    73% {
+        content: 'a freelanc';
+    }
+    74% {
+        content: 'a freelan';
+    }
+    75% {
+        content: 'a freela';
+    }
+    76% {
+        content: 'a freel';
+    }
+    77% {
+        content: 'a free';
+    }
+    78% {
+        content: 'a fre';
+    }
+    80% {
+        content: 'a fr';
+    }
+    81% {
+        content: 'a f';
+    }
+    82% {
+        content: 'a ';
+    }
+    83% {
+        content: 'a';
+    }
+    84% {
+        content: '';
+    }
+    85% {
+        content: '';
+    }
+    86% {
+        content: '';
+    }
+    87% {
+        content: '';
+    }
+    88% {
+        content: '';
+    }
+    89% {
+        content: '';
+    }
+    90% {
+        content: '';
+    }
+    100% {
+        content: '';
+    }
+}
