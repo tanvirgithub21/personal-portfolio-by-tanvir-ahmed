@@ -1,7 +1,8 @@
 /* google font poppins link  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 
 /* common style */
 :root{
@@ -12,6 +13,9 @@
     --open-sane: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
+*{
+    color: white;
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +24,7 @@ body{
     background-color: var(--black-color);
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--open-sane);
 }
 .container{
     width: 1170px;
@@ -60,6 +64,10 @@ header{
 .nav_wrap ul a:hover{
     color: var(--highlight-color);
 }
+.nav_wrap ul a:hover i{
+    color: var(--highlight-color);
+    transition: .3s ease-in-out;
+}
 
 /* home section style  */
 .home{
@@ -94,7 +102,7 @@ header{
 }
 .animation_text{
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
     white-space: nowrap;
     font-family: var(--poppins);
@@ -153,6 +161,7 @@ header{
 .animation_text > span::before{
     content: "";
     color: var(--highlight-color);
+    font-weight: 700;
     position: absolute;
     top: 9px;left: 0px;
     animation: typing 15s step-end infinite;
@@ -161,352 +170,437 @@ header{
 
 @keyframes typing {
     0% {
-        content: 'T';
+        content: 'T|';
     }
 
     1% {
-        content: 'ta';
+        content: 'ta|';
     }
 
     2% {
-        content: 'tan';
+        content: 'tan|';
     }
 
     3% {
-        content: 'tanv';
+        content: 'tanv|';
     }
 
     4% {
-        content: 'tanvi';
+        content: 'tanvi|';
     }
 
     5% {
-        content: 'tanvir';
+        content: 'tanvir|';
     }
 
     6% {
-        content: 'tanvir ';
+        content: 'tanvir |';
     }
 
     7% {
-        content: 'tanvir a';
+        content: 'tanvir a|';
     }
 
     8% {
-        content: 'tanvir ah';
+        content: 'tanvir ah|';
     }
 
     9% {
-        content: 'tanvir ahm';
+        content: 'tanvir ahm|';
     }
 
     10% {
-        content: 'tanvir ahme';
+        content: 'tanvir ahme|';
     }
 
     11% {
-        content: 'tanvir ahmed';
+        content: 'tanvir ahmed|';
     }
 
     12% {
-        content: 'tanvir ahmed';
+        content: 'tanvir ahmed|';
     }
 
     12.5% {
-        content: 'tanvir ahme';
+        content: 'tanvir ahme|';
     }
 
     13% {
-        content: 'tanvir ahm';
+        content: 'tanvir ahm|';
     }
 
     13.5% {
-        content: 'tanvir ah';
+        content: 'tanvir ah|';
     }
 
     14% {
-        content: 'tanvir a';
+        content: 'tanvir a|';
     }
 
     14.5% {
-        content: 'tanvir ';
+        content: 'tanvir |';
     }
 
     15% {
-        content: 'tanvir';
+        content: 'tanvir|';
     }
 
     15.5% {
-        content: 'tanvi';
+        content: 'tanvi|';
     }
 
     16% {
-        content: 'tanv';
+        content: 'tanv|';
     }
 
     16.5% {
-        content: 'tan';
+        content: 'tan|';
     }
 
     17% {
-        content: 'ta';
+        content: 'ta|';
     }
 
     17.5% {
-        content: 't';
+        content: 't|';
     }
 
     18% {
-        content: '';
+        content: '|';
     }
 
     20% {
-        content: '';
+        content: '|';
     }
 
     21% {
-        content: 'a';
+        content: 'a|';
     }
 
     22% {
-        content: 'a ';
+        content: 'a |';
     }
 
     23% {
-        content: 'a w';
+        content: 'a w|';
     }
 
     24% {
-        content: 'a we';
+        content: 'a we|';
     }
 
     25% {
-        content: 'a web';
+        content: 'a web|';
     }
 
     26% {
-        content: 'a web ';
+        content: 'a web |';
     }
     27% {
-        content: 'a web d';
+        content: 'a web d|';
     }
     28% {
-        content: 'a web de';
+        content: 'a web de|';
     }
     29% {
-        content: 'a web des';
+        content: 'a web des|';
     }
     30% {
-        content: 'a web desi';
+        content: 'a web desi|';
     }
     31% {
-        content: 'a web desig';
+        content: 'a web desig|';
     }
     32% {
-        content: 'a web design';
+        content: 'a web design|';
     }
     33% {
-        content: 'a web designi';
+        content: 'a web designi|';
     }
     34% {
-        content: 'a web designir';
+        content: 'a web designir|';
     }
     35% {
-        content: 'a web designir';
+        content: 'a web designir|';
     }
     35.5% {
-        content: 'a web designi';
+        content: 'a web designi|';
     }
     36% {
-        content: 'a web design';
+        content: 'a web design|';
     }
     36.5% {
-        content: 'a web desig';
+        content: 'a web desig|';
     }
     37% {
-        content: 'a web desi';
+        content: 'a web desi|';
     }
     37.5% {
-        content: 'a web des';
+        content: 'a web des|';
     }
     38% {
-        content: 'a web de';
+        content: 'a web de|';
     }
     38.5% {
-        content: 'a web d';
+        content: 'a web d|';
     }
     39% {
-        content: 'a web ';
+        content: 'a web |';
     }
     39.5% {
-        content: 'a web';
+        content: 'a web|';
     }
     40% {
-        content: 'a we';
+        content: 'a we|';
     }
     40.5% {
-        content: 'a w';
+        content: 'a w|';
     }
     41% {
-        content: 'a ';
+        content: 'a |';
     }
     41.5% {
-        content: 'a';
+        content: 'a|';
     }
     42% {
-        content: '';
+        content: '|';
     }
     43% {
-        content: '';
+        content: '|';
     }
     44% {
-        content: 'a';
+        content: 'a|';
     }
     45% {
-        content: 'a ';
+        content: 'a |';
     }
     46% {
         content: 'a b';
     }
     47% {
-        content: 'a bl';
+        content: 'a bl|';
     }
     48% {
-        content: 'a blo';
+        content: 'a blo|';
     }
     49% {
-        content: 'a blog';
+        content: 'a blog|';
     }
     50% {
-        content: 'a blogg';
+        content: 'a blogg|';
     }
     51% {
-        content: 'a blogge';
+        content: 'a blogge|';
     }
     52% {
-        content: 'a blogger';
+        content: 'a blogger|';
     }
     52% {
-        content: 'a blogger';
+        content: 'a blogger|';
     }
     52.5% {
-        content: 'a blogge';
+        content: 'a blogge|';
     }
     53% {
-        content: 'a blogg';
+        content: 'a blogg|';
     }
     53.5% {
-        content: 'a blog';
+        content: 'a blog|';
     }
     54% {
-        content: 'a blo';
+        content: 'a blo|';
     }
     54.5% {
-        content: 'a bl';
+        content: 'a bl|';
     }
     55% {
-        content: 'a b';
+        content: 'a b|';
     }
     55.5% {
-        content: 'a ';
+        content: 'a |';
     }
     56% {
-        content: 'a';
+        content: 'a|';
     }
     56.5% {
-        content: '';
+        content: '|';
     }
     58% {
-        content: 'a';
+        content: 'a|';
     }
     59% {
-        content: 'a ';
+        content: 'a |';
     }
     60% {
-        content: 'a f';
+        content: 'a f|';
     }
     61% {
-        content: 'a fr';
+        content: 'a fr|';
     }
     62% {
-        content: 'a fre';
+        content: 'a fre|';
     }
     63% {
-        content: 'a free';
+        content: 'a free|';
     }
     64% {
-        content: 'a freel';
+        content: 'a freel|';
     }
     65% {
-        content: 'a freela';
+        content: 'a freela|';
     }
     66% {
-        content: 'a freelan';
+        content: 'a freelan|';
     }
     67% {
-        content: 'a freelanc';
+        content: 'a freelanc|';
     }
     68% {
-        content: 'a freelance';
+        content: 'a freelance|';
     }
     69% {
-        content: 'a freelancer';
+        content: 'a freelancer|';
     }
     72% {
-        content: 'a freelancr';
+        content: 'a freelancr|';
     }
     73% {
-        content: 'a freelanc';
+        content: 'a freelanc|';
     }
     74% {
-        content: 'a freelan';
+        content: 'a freelan|';
     }
     75% {
-        content: 'a freela';
+        content: 'a freela|';
     }
     76% {
         content: 'a freel';
     }
     77% {
-        content: 'a free';
+        content: 'a free|';
     }
     78% {
-        content: 'a fre';
+        content: 'a fre|';
     }
     80% {
-        content: 'a fr';
+        content: 'a fr|';
     }
     81% {
-        content: 'a f';
+        content: 'a f|';
     }
     82% {
-        content: 'a ';
+        content: 'a |';
     }
     83% {
-        content: 'a';
+        content: 'a|';
     }
     84% {
-        content: '';
+        content: '|';
     }
     85% {
-        content: '';
+        content: '|';
     }
     86% {
-        content: '';
+        content: '|';
     }
     87% {
-        content: '';
+        content: '|';
     }
     88% {
-        content: '';
+        content: '|';
     }
     89% {
-        content: '';
+        content: '|';
     }
     90% {
-        content: '';
+        content: '|';
     }
     100% {
-        content: '';
+        content: '|';
     }
+}
+
+/* about me style start  */
+.about_me{
+    background-color: #222222;
+}
+.about_me_wrap > h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--poppins);
+    text-align: center;
+    margin: 55px 0 10px 0;
+    word-spacing: 8px;
+}
+.about_me_wrap > h1 > span{
+    color: var(--highlight-color);
+}
+.about_me_wrap p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+.basic_info_wrap{
+    display: flex;
+    align-items: center;
+}
+
+.basic_info_img{
+    flex: 1;
+    margin-bottom: 100px;
+}
+.info_img{
+    width: 420px;
+    height: 420px;
+    position: relative;
+    z-index: 0;
+}
+.info_img img{
+    width: 100%;
+    height: 100%;
+}
+.img_border{
+    width: 420px;
+    height: 420px;
+    border: 8px solid var(--highlight-color);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: -1;
+}
+.basic_info_text{
+    flex: 1;
+}
+
+
+.info_text{
+    display: flex;
+    margin-bottom: 45px;
+}
+.info_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    font-size: 18px;
+}
+.info_box > span{
+    color: #d1d1d1;
+}
+.info_box > span > span{
+    margin-left: 25px;
+}
+.cv_button a{
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid var(--highlight-color);
+    transition: .3s ease-in-out;
+}
+.cv_button a > i{
+    margin-right: 8px;
+}
+.cv_button a:hover{
+    background-color: transparent;
+    border: 2px solid var(--highlight-color);
 }
